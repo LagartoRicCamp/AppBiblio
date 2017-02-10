@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url('websymbols/websymbols-regular-webfont.eot');
+    src: url('websymbols/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('websymbols/websymbols-regular-webfont.woff') format('woff'),
+        url('websymbols/websymbols-regular-webfont.ttf') format('truetype'),
+        url('websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.ca-menu{ /*Hace mas pequeñas las barras */
+
+    padding:0;
+    margin:20px auto;
+    width: 500px;
+    width: 100%;
+    max-width: 480px;
+}
+.ca-menu li{
+    
+    height: 70px; /*Adelgaza la barra*/
+    overflow: hidden;
+    position: relative;
+    display: block;
+    background: #fff;
+    -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    -moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    margin-bottom: 4px;
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    transition: all 300ms linear;
+     
+}
+.ca-menu li:last-child{
+    margin-bottom: 0px;
+   
+    
+}
+.ca-menu li a{ /*alineacion del texto*/
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #333;
+    position:absolute;
+   
+}
+
+.ca-content{  /*modifica el contenido de los botones*/
+    
+    position: absolute;
+    left: 100px;/*  mueve el texto a la izquierda*/
+    width: 365px;
+    height: 170px;
+    top: 18px;
+    
+     
+}
+.ca-main{
+    
+    font-size: 19px;
+    -webkit-transition: all 300ms linear;
+    -moz-transition: all 300ms linear;
+    -o-transition: all 300ms linear;
+    -ms-transition: all 300ms linear;
+    transition: all 300ms linear;
+   
+}
+  
+
+.ca-menu li:hover{
+    background:   #F6D8CE; /* COLOR DDE FONDO DEL BOTON*/
+    
+    
+       }
+.ca-menu li:hover .ca-icon{
+    font-size: 40px;
+    opacity: 0.8;
+    text-shadow: 0px 0px 13px #fff;
+    min-width: 1px;
+    
+    
+}
+.ca-menu li:hover .ca-main{
+    opacity: 1;
+    color: #2270dc; /* color fuente*/
+    -webkit-animation: moveFromTop 300ms ease-in-out;
+    -moz-animation: moveFromTop 300ms ease-in-out;
+    -ms-animation: moveFromTop 300ms ease-in-out;
+   
+}
+.ca-menu li:hover .ca-sub{
+    opacity: 1;
+    -webkit-animation: moveFromBottom 300ms ease-in-out;
+    -moz-animation: moveFromBottom 300ms ease-in-out;
+    -ms-animation: moveFromBottom 300ms ease-in-out;
+
+} 

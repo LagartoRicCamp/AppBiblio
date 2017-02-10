@@ -1,0 +1,94 @@
+ ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #00bcc7;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+ul.topnav li a:hover {background-color: #298290}/*evento menu*/
+
+ul.topnav li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: left;
+  }
+
+  .boton {
+text-decoration: none;
+ color: white;
+ font-weight: bold;
+ padding: 12px 20px;
+ font-size: 18px;
+ border-radius: 10px;
+ background-color: blue;
+ box-shadow: 0 5px 5px #313131, 0 9px 0 #393939, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+ position: relative;
+ border-bottom: 1px solid rgba(255,255,255,0.2);
+ display: inline-block;
+ font-family: Arial, Helvetica, sans;
+ text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
+}
+
+.boton:hover {
+ box-shadow: 0 5px 5px #313131, 0 9px 0 #393939, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2);
+ color: #fff !important;
+}
+
+.boton:active {
+ top: 7px;
+ box-shadow: 0 2px 0 #393939, 0px 4px 4px rgba(0,0,0,0.4), inset 0px 2px 5px rgba(0,0,0,0.2);
+ color: #fff !important;
+}
+
+.formaBoton {
+ border-radius: 5px;
+ padding-left: 25px;
+ padding-right: 25px;
+}
+
+.colorBoton{
+ background-color: greenyellow;
+ box-shadow: 0 5px 5px #853232, 0 9px 0 #5e2525, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+
+.colorBoton:hover {
+ box-shadow: 0 5px 5px #853232, 0 9px 0 #5e2525, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+
+.colorBoton:active {
+ box-shadow: 0 2px 0 #5e2525, 0px 4px 4px rgba(0,0,0,0.4), inset 0px 2px 5px rgba(0,0,0,0.2);
+}

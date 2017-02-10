@@ -1,0 +1,229 @@
+* {
+	margin: 0;
+	padding: .2rem; /*modifica tamaño de pantalla */
+	
+}
+.Redes{
+    
+    left: 0px;
+    top: 200px;
+    z-index: 2000;
+    
+}
+
+
+.Redes ul {
+    list-style:none;
+   
+}
+
+.Redes ul li a {
+        display: inline-block; /*permite juntar o separar la barra ; table-cell junta botones pero no los pega; ruby los pega*/
+        color:#fff;
+	background: #000;
+	padding:10px 15px; /*tamaño del boton social*/
+	text-decoration:none;
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	margin-top:.2rem;
+	transition: all 500ms ease;
+        
+}
+.Redes ul li .icon-facebook2 {background:#185BA3}
+.Redes ul li .icon-twitter {background:#2990E4}
+.Redes ul li .icon-youtube {background:#DB3030 }
+.Redes ul li .icon-instagram {background:#DB3030}
+.Redes ul li .icon-tumblr {background:#385D7C}
+.Redes ul li .icon-google-plus3 {background:#DB3030}
+
+.Redes ul li a:hover { /* evento-alarga el boton de redes sociales*/
+	padding: 10px 30px;
+	background: #000;
+}
+
+#pie{
+    max-width: 260px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align:justify;
+    font-family: sans-serif;   
+}
+
+.boton {
+text-decoration: none;
+ color: #fff;
+ font-weight: bold;
+ padding: 12px 20px;
+ font-size: 18px;
+ border-radius: 10px;
+ background-color: blue;
+ box-shadow: 0 5px 5px #313131, 0 9px 0 #393939, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+ position: relative;
+ border-bottom: 1px solid rgba(255,255,255,0.2);
+ display: inline-block;
+ font-family: Arial, Helvetica, sans;
+ text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
+}
+
+.boton:hover {
+ box-shadow: 0 5px 5px #313131, 0 9px 0 #393939, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2);
+ color: #fff !important;
+}
+
+.boton:active {
+ top: 7px;
+ box-shadow: 0 2px 0 #393939, 0px 4px 4px rgba(0,0,0,0.4), inset 0px 2px 5px rgba(0,0,0,0.2);
+ color: #fff !important;
+}
+
+.formaBoton {
+ border-radius: 5px;
+ padding-left: 25px;
+ padding-right: 25px;
+}
+
+.colorBoton{
+ background-color: #c34747;
+ box-shadow: 0 5px 5px #853232, 0 9px 0 #5e2525, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+
+.colorBoton:hover {
+ box-shadow: 0 5px 5px #853232, 0 9px 0 #5e2525, 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 15px rgba(255,255,255,0.4), inset 0 -2px 9px rgba(0,0,0,0.2);
+}
+
+.colorBoton:active {
+ box-shadow: 0 2px 0 #5e2525, 0px 4px 4px rgba(0,0,0,0.4), inset 0px 2px 5px rgba(0,0,0,0.2);
+}
+
+    
+ #home{
+width: 8%;
+ max-width:480px;
+ alignment-adjust:  after-edge;    
+ text-decoration: none;
+ color: #fff;
+ font-weight: bold;
+ padding: 12px 20px;
+ font-size: 18px;
+ border-radius: 10px;
+ background-color:whitesmoke;
+ box-shadow: 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+ position: relative;
+ border-bottom: 1px solid rgba(255,255,255,0.2);
+ display: inline-block;
+ font-family: Arial, Helvetica, sans;
+ text-shadow: 0px -1px 0px rgba(0,0,0,0.2);  
+  padding-right: 6rem;
+ padding-left: .5rem;
+ 
+    }
+        
+#ico_pisos{
+ width: 8%;
+ max-width:480px;
+ text-decoration: none;
+ color: #fff;
+ font-weight: bold;
+ padding: 12px 20px;
+ font-size: 18px;
+ border-radius: 10px;
+ background-color: whitesmoke;
+ box-shadow: 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+ position: relative;
+ border-bottom: 1px solid rgba(255,255,255,0.2);
+ display: inline-block;
+ font-family: Arial, Helvetica, sans;
+ text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
+ alignment-adjust: central;
+padding-right: 6rem;
+padding-left: .5rem;
+    }
+    
+#ico_espacios{
+width: 8%;
+max-width:480px;
+text-decoration: none;
+ color: #fff;
+ font-weight: bold;
+ padding: 12px 20px;
+ font-size: 18px;
+ border-radius: 10px;
+ background-color: whitesmoke;
+ box-shadow:  0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+ position: relative;
+ border-bottom: 1px solid rgba(255,255,255,0.2);
+ display: inline-block;
+ font-family: Arial, Helvetica, sans;
+ text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
+ alignment-adjust: central;
+  padding-right: 6rem;
+ padding-left: .5rem;
+    }
+    
+ #ico_cred{
+ width: 8%;
+ max-width:480px;
+ text-decoration: none;
+ color: #fff;
+ font-weight: bold;
+ padding: 12px 20px;
+ font-size: 18px;
+ border-radius: 10px;
+ background-color:whitesmoke;
+ box-shadow:  0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+ position: relative;
+ border-bottom: 1px solid rgba(255,255,255,0.2);
+ display: inline-block;
+ font-family: Arial, Helvetica, sans;
+ text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
+  padding-right: 6rem;
+ padding-left: .5rem;
+   }
+    
+ #ico_libro{
+ width: 8%;
+ max-width:480px;
+ text-decoration: none;
+ color: #fff;
+ font-weight: bold;
+ padding: 12px 20px;
+ font-size: 18px;
+ border-radius: 10px;
+ background-color: whitesmoke;
+ box-shadow: 0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+ position: relative;
+ border-bottom: 1px solid rgba(255,255,255,0.2);
+ display: inline-block;
+ font-family: Arial, Helvetica, sans;
+ text-shadow: 0px -1px 0px rgba(0,0,0,0.2);  
+  padding-right: 6rem;
+ padding-left: .5rem;
+    }
+    
+   #ico_rec{
+ width: 8%;
+ max-width:480px;
+ text-decoration: none;
+ color: #fff;
+ font-weight: bold;
+ padding: 12px 20px;
+ font-size: 18px;
+ border-radius: 10px;
+ background-color:whitesmoke;
+ box-shadow:  0px 9px 10px rgba(0,0,0,0.4), inset 0px 2px 9px rgba(255,255,255,0.2), inset 0 -2px 9px rgba(0,0,0,0.2);
+ position: relative;
+ border-bottom: 1px solid rgba(255,255,255,0.2);
+ display: inline-block;
+ font-family: Arial, Helvetica, sans;
+ text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
+ padding-right: 6rem;
+ padding-left: .5rem;
+    }
+    
+    
+ #iconos_home{
+  size: 200px; 
+    }
+  
+ 

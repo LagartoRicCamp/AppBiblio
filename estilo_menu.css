@@ -1,0 +1,74 @@
+.onglet .text_onglet
+{ 
+  background-color: visible;
+  width: 0px;
+  visibility: hidden;
+  display:  ruby-base-group;
+  overflow: hidden;
+  font-size:25px;
+  font-weight:300;
+  height: 20px;
+  color: palegreen;
+  font-family: 'Roboto';
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  
+
+}
+.onglet:hover .text_onglet
+{
+background-size: 10px;
+  visibility: visible;
+  width:200px;
+  color: black;
+  height: 50px;
+  padding-left: 4px;
+  font-size:medium;
+ 
+}
+
+
+
+
+
+
+
+
+    input[type="image"]{
+
+         vertical_align:middle;   /* alineacion del icono del buscador*/   
+
+  }
+
+     fieldset{
+     padding:0;
+     border:none;     
+
+    }
+
+   input[type="search"]{
+
+     display:inline-block;
+     padding:10px;
+     border-radius:4px;
+     font-size:18px;
+     border:none;
+     background-color:#E6E6E6;
+    padding:9px 10px 5px 45px;
+
+
+
+   }
+
+
+.search{
+
+padding-left:20rem;
+align:center;
+   
+
+
+}

@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Una Brujula</title>
+    </head>
+    <body>
+        <div id="principal">
+          <div id="encabezado">
+            <h2>Brujula</h2>
+            <p>Por favor presiona para empezar a orientarse</p>
+            <div id="resultados"></div>
+            <a href="javascript:miBrujula();">Orientame</a>
+          </div>
+          <div id="brujula">
+            <img src="imagen/brujula-imagen-animada-0007.gif" style="width:100%;"/>
+          </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript">
+        function onSuccess_Compass(heading) {
+          var apunto = heading.magneticHeading;
+          var element = document.getElementById('resultados');
+          var giro = 360 - apunto;
+          document.getElementById("brujula").style.WebkitTransform = "rotate("+giro+"deg)";
+          element.innerHTML = 'Apunta a: ';
+          if (giro > 45 && giro < 135 ) {
+            element.innerHTML = 'Oeste';
+          }
+          if (giro > 225 && giro < 315 ) {
+            element.innerHTML = 'Este';
+          }
+          if (giro > 135 && giro < 225) {
+            element.innerHTML = 'Sur';
+          }
+          if (giro > 0 && giro < 45) {
+            element.innerHTML = "Norte";
+          }
+          if (giro > 315) {
+            element.innerHTML = 'Norte';
+          }
+          if (giro > 175 && giro < 185) {
+            navigator.vibrate(3000);
+          }
+        };
+
+        function onError_Compass(compassError) {
+        alert('Compass error: ' + compassError.code);
+        };
+
+        function miBrujula() {
+          var options = {
+          frequency: 500
+          }; // Update every 3 seconds
+
+          var watchID = navigator.compass.watchHeading(onSuccess_Compass, onError_Compass, options);
+        }
+            app.initialize();
+        </script>
+    </body>
+</html>
